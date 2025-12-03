@@ -1,3 +1,6 @@
+# https://github.com/GraberMN/lab10-MG-MG.git
+# Partner 1: Mateo Graber (git config user.email "grabermn3@gmail.com")
+# Partner 2: Mateo Graber (git config user.email "graberm@ufl.edu")
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -7,9 +10,9 @@ One function per operation, in order.
 import math
 # First example
 def square_root(a):
+    if a < 0:
+        raise ValueError
     try:
-        if a < 0:
-            raise ValueError
         return math.sqrt(a)
     except ValueError:
         print("square root cannot be negative")
